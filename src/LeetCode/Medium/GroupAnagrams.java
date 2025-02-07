@@ -5,7 +5,11 @@ import java.util.*;
 public class GroupAnagrams {
     public static void main(String[] args){
         String[] strs = {"eat","tea","tan","ate","nat","bat"};
+        String[] strs1 = {""};
+        String[] strs2 = {"a"};
         System.out.println(groupAnagrams(strs));
+        System.out.println(groupAnagrams(strs1));
+        System.out.println(groupAnagrams(strs2));
     }
 
     private static ArrayList<List<String>> groupAnagrams(String[] strs) {

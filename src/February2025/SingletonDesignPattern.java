@@ -4,6 +4,13 @@ public class SingletonDesignPattern {
     private static SingletonDesignPattern sp;
 
     private SingletonDesignPattern(){
-        thsi
+
+    }
+
+    public SingletonDesignPattern getInstance(){
+        if (sp == null) {
+            sp = new SingletonDesignPattern();
+        }
+        return sp;
     }
 }

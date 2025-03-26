@@ -9,7 +9,7 @@ public class TestInter implements AbstractionInterface{
 
     public static void main(String[] args){
         TestInter in = new TestInter();
-        in.animal();;
+        in.animal();
         AbstractionInterface.display();
         in.data();
     }

@@ -9,11 +9,6 @@ public class I_CustomisezString {
     private static void reverseOnlyString(String input) {
         StringBuilder letter = new StringBuilder();
         StringBuilder result = new StringBuilder();
-        StringBuilder digits = new StringBuilder();
-        StringBuilder specialChar = new StringBuilder();
-        boolean digitsFound = false;
-        boolean special = false;
-        boolean letterD = false;
 
         for(char c : input.toCharArray()){
             if(Character.isDigit(c)){

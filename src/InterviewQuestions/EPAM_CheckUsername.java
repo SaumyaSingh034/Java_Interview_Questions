@@ -18,12 +18,8 @@ public class EPAM_CheckUsername {
     private static void checkUserName(String str) {
         List<String> userNameList = new ArrayList<>();
         if(validUsername(str)){
-            if(!userNameList.contains(str)){
-                userNameList.add(str);
-                System.out.println("Valid User Name : "+str);
-            }else{
-                System.out.println("Duplicate User Name: "+str);
-            }
+            userNameList.add(str);
+            System.out.println("Valid User Name : "+str);
         }else{
             System.out.println("Invalid UserName : "+str);
         }

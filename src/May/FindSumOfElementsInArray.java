@@ -1,6 +1,7 @@
 package May;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class FindSumOfElementsInArray {
@@ -8,6 +9,7 @@ public class FindSumOfElementsInArray {
         int[] arr = {1,2,3,4,5};
         int sum = 6;
         findTheTarget(arr, sum);
+        rotate(arr, 1);
     }
 
     private static void findTheTarget(int[] arr, int sum) {
@@ -23,5 +25,18 @@ public class FindSumOfElementsInArray {
 
         }
         System.out.println(resultTarget);
+    }
+
+    private static void rotate(int[] arr, int k){
+        for(int i=0;i<k;i++){
+            int last = arr[arr.length-1];
+            for(int j= arr.length-1;j>0;j--){
+                arr[j] = arr[j-1];
+            }
+            arr[0] = last;
+        }
+        System.out.println(Arrays.toString(arr));
+
+
     }
 }

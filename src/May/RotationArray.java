@@ -4,11 +4,11 @@ import java.util.Arrays;
 
 public class RotationArray {
     public static void main(String[] args){
-        int rotation = 3;
-        int[] arr = {1,2,3,4,5,6,7};
-        int[] arr1 = {1,2,3,4,5,6,7};
-        rotationOfArray(arr, rotation);
-        rotateArrayBasedOnRotation(arr1, rotation);
+        int rotation = 2;
+        int[] arr = {1,2,3,4,5};
+        int[] arr1 = {1,2,3,4,5};
+       // rotationOfArray(arr, rotation);
+       rotateArrayBasedOnRotation(arr1, rotation);
     }
 
     private static void rotateArrayBasedOnRotation(int[] arr, int rotation) {

@@ -16,7 +16,7 @@ public class NAB_LongestSubstring {
         for(int i=0;i<str.length();i++){
             char ch = str.charAt(i); //b
             dataMap.put(ch, dataMap.getOrDefault(ch,0)+1); //b-3 a-4
-            while(dataMap.get(ch) > 3){
+            while(dataMap.get(ch) > 2){
                 char leftChar = str.charAt(start);
                 dataMap.put(leftChar, dataMap.get(leftChar)-1);
                 start++;

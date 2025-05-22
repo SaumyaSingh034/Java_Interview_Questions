@@ -21,6 +21,7 @@ public class NAB_Round2 {
             if(dataSet.getKey() == 'a' || dataSet.getKey() == 'e' ||
                     dataSet.getKey() == 'i' || dataSet.getKey() == 'o'
             || dataSet.getKey() == 'u'){
+                System.out.println(dataSet.getKey() +" -----> "+dataSet.getValue());
 
             }
         }

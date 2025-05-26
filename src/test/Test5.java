@@ -8,7 +8,8 @@ import java.util.Set;
 public class Test5 {
     public static void main(String[] args){
         String str = "saumya23456&*^yu2";
-        //longestSubstringUnique(str);
+        String str1 = "saumyasingh";
+        longestSubstringUnique(str1);
         fetchNumberAndSum(str);
     }
 
@@ -25,7 +26,29 @@ public class Test5 {
     }
 
     private static void longestSubstringUnique(String str) {
-       Map<Character, Integer> data = new HashMap<>();
+       Set<Character> dataSet = new HashSet<>();
+       int maxLength = 0;
+       int start = 0;
+       int end = 0;
+       int maxStart = 0;
+       while(end<str.length()){
+           char ch = str.charAt(end);
+           if(!dataSet.contains(ch)) {
+               dataSet.add(ch);
+               end++;
+               if (end - start > maxLength) {
+                   maxLength = end - start;
+                   maxStart = start;
+               }
+           }else{
+                   dataSet.remove(str.charAt(start));
+                   start++;
+               }
+           }
+
+
+
+        System.out.println(str.substring(maxStart, maxStart+maxLength));
 
     }
 }

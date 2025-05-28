@@ -6,7 +6,10 @@ public class RotateArray {
     public static void main(String[] args){
         int[] arr = {1,2,3,4,5};
         int rotate = 2;
+        int[] arr1 = {3, 8, 9, 7, 6};
+        int k = 3;
         rotateArray(arr,rotate);
+        rotateArray(arr1,k);
     }
 
     private static void rotateArray(int[] arr, int rotate) {

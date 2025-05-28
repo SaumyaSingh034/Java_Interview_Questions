@@ -5,7 +5,15 @@ public class FrogJump {
         int x = 10;
         int y = 85;
         int d = 30;
-        calculateFrogJump(x,y,d);
+        int x1 = 3;
+        int y2 = 999111321;
+        int d3 = 7;
+        calculateFrogJump(x1,y2,d3);
+        System.out.println(calculateFrogJump1(x,y,d));
+    }
+
+    public static int calculateFrogJump1(int x, int y, int d) {
+        return (int) Math.ceil((double)(y - x) / d);
     }
 
     private static void calculateFrogJump(int x, int y, int d) {

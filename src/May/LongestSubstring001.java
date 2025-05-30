@@ -13,12 +13,14 @@ public class LongestSubstring001 {
 
     private static void findLongestSubstring001(String str) {
         Set<Character> dataSet = new LinkedHashSet<>();
-        int j=0, max = 0;
+        int j=0, max = 0,start=0;
         for(int i = 0;i<str.length();i++){
             char ch = str.charAt(i);
             if(!dataSet.contains(ch)){
                 dataSet.add(ch);
                 max = Math.max(max, i-j+1);
+                start = i-j+1;
+
 
             }else{
                 dataSet.remove(j++);

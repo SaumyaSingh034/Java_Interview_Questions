@@ -1,5 +1,9 @@
 package test;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 public class Question2 {
     public static void main(String[] args) {
         int[] arr = {1,2,5,6,3,4};
@@ -9,6 +13,9 @@ public class Question2 {
 
     private static void findThirdLargestArray(int[] arr) {
         int len = arr.length-1;
+        List<Integer> data = Arrays.asList(1,0,1,0);
+        Collections.sort(data);
+        System.out.println(data.get(arr.length-3));
 
         int max=Integer.MIN_VALUE, secMax=Integer.MIN_VALUE, tMax=Integer.MIN_VALUE;
         for(int i=0;i< arr.length;i++){

@@ -7,8 +7,16 @@ public class Interview1 {
     }
 
     private static void createDynamicString(int number) {
+        StringBuilder result = new StringBuilder();
         while(number>0){
+            result.append("+");
+            --number;
+            if(number>0) {
+                result.append("-");
+                --number;
+            }
 
         }
+        System.out.println(result);
     }
 }
